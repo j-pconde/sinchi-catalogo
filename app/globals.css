@@ -1,0 +1,54 @@
+:root {
+  color-scheme: light;
+  --fundo: #f6f1ea;
+  --texto: #2b241c;
+  --destaque: #7a4b3a;
+  --cartao: #fffaf4;
+  --borda: #e4d5c7;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  font-family: Georgia, "Times New Roman", serif;
+  background: var(--fundo);
+  color: var(--texto);
+}
+
+main {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 2rem;
+}
+
+.cartao {
+  width: min(36rem, 100%);
+  background: var(--cartao);
+  border: 1px solid var(--borda);
+  padding: 2.5rem 2rem;
+  text-align: center;
+}
+
+h1 {
+  margin: 0 0 0.75rem;
+  font-size: 1.65rem;
+  font-weight: 500;
+  color: var(--destaque);
+  letter-spacing: 0.02em;
+}
+
+p {
+  margin: 0;
+  line-height: 1.5;
+  font-family: system-ui, sans-serif;
+  font-size: 0.95rem;
+}
